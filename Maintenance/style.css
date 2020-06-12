@@ -1,0 +1,28 @@
+@font-face{
+    font-family: nunitoExtraLight;
+    src: url(/Nunito_Sans/NunitoSans-ExtraLight.ttf) format("truetype")
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  margin-top: 20vh;
+}
+
+p{
+    margin-top: 8vh;
+    margin-right: 2vh;
+    font-family: nunitoExtraLight;
+    font-size: 2vh;
+    color: grey;
+}
+img{
+    margin-top: 8vh;
+    height: 250px;
+}
