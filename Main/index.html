@@ -9,27 +9,8 @@
         href="images/MazhariLogo16x16.ico" />
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="javascript/jqueri.min.js"></script>
-        <script type="text/javascript">
-            var arrLang = {
-                'de': {
-                    'pHomeText': "AUSSERGEWÖHNLICHE ORTE, UNVERGLEICHLICHER LEBENSSTIL. \
-                                FÜR DIEJENIGEN, DIE EIN AUSSERGEWÖHNLICHES ZUHAUSE SUCHEN. FINDEN SIE EIN ZUHAUSE, DAS ZU IHNEN PASST.",
-                },
-                'en': {
-                    'pHomeText': "EXTRAORDINARY PLACES, INCOMPARABLE LIFESTYLE. FOR THOSE LOOKING FOR AN EXCEPTIONAL HOME. FIND A HOME THAT SUITS YOUR LIFESTYLE.",
-                }
-            };
-            
-            $(function(){
-                $('.translate').click(function(){
-                    var lang = $(this).attr('id');
-
-                    $('.lang').each(function(index, element){
-                        $(this).text(arrLang[lang][$(this).attr('key')]);
-                    })
-                });
-            });
-        </script>
+        <script type="text/javascript" src="javascript/language.js"></script>
+        <script type="text/javascript" src="javascript/scroll.js"></script>
     </head>
         <body>
            <section id="start">
@@ -38,21 +19,22 @@
                     
                 </header> 
             </section>
+            
             <section id="buttons">
                 <button class="translate" id="de">Deutsch</button>
                 <button class="translate" id="en">English</button>
             </section>
 
             <section id="home">
-                <h1 id="homeTitle">HOME</h1>
+                <h1 class="lang" key='h1HomeTitle' id="homeTitle">HOME</h1>
             </section>
 
             <section id="homeText">
                 <p class="lang" key='pHomeText'>AUSSERGEWÖHNLICHE ORTE, UNVERGLEICHLICHER LEBENSSTIL.                    FÜR DIEJENIGEN, DIE EIN AUSSERGEWÖHNLICHES ZUHAUSE SUCHEN. FINDEN SIE EIN ZUHAUSE, DAS ZU IHNEN PASST.</p>
             </section>
 
-            <section id="immobilien">
-                <h1 id="immobilienTitle">IMMOBILIEN</h1>
-            </section>
+            <!-- <section id="immobilien">
+                <h1 class="lang" key='h1ImmoTitle' id="immoTitle">IMMOBILIEN</h1>
+            </section> -->
         </body>
 </html>
