@@ -24,7 +24,7 @@ display: block;
 #logo{
 padding-top: 2%;
 margin-bottom: 2%;
-width: 100%;
+width: 80%;
 display: block;
 margin: auto
 }
@@ -39,9 +39,6 @@ margin: auto
 
 }
 
-#homeText{
-  transition: 3s;
-}
 
 #buttons{
   display: inline-block;
@@ -54,9 +51,9 @@ margin: auto
   width: 49.89%;
   height: 100vh;
   border-radius: 0%;
-  color: #A9A9A9;
+  color: rgb(85, 85, 85);
   font-family: nunitoExtraLight;
-  font-size: 8vw;
+  font-size: 6vw;
   letter-spacing: 3vw;
   background-color: #FFFFFF;
   border: solid #000000 0px;
@@ -87,44 +84,103 @@ margin: auto
   background-size: cover;
 }
 
+#aboutUs{
+  background-image: url("images/AboutUs.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;   
+  background-size: cover;
+}
+
+#contact{
+  background-image: url("images/Kontakt.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;   
+  background-size: cover;
+}
+
 
 h1{
   margin: 0
 }
 
-#homeTitle{
-  letter-spacing: 8vw;
-  font-size: 8vw;
-  padding-top: 6%;
-  padding-left: 8%;
-} 
-
 #immoTitle{
-  letter-spacing: 8vh;
-  font-size: 8vh;
+  letter-spacing: 8vw;
+  font-size: 7vw;
   padding-top: 6%;
   padding-left: 8%;
+  line-height: 4vw;
   text-align: right;
   color: white;
 }
 
+#aboutTitle, #homeTitle, #contactTitle{
+  letter-spacing: 8vw;
+  font-size: 7vw;
+  padding-top: 6%;
+  padding-left: 8%;
+  line-height: 4vw;
+
+  color: rgb(85, 85, 85);
+}
+
+#immobilienText, #aboutUsText, #homeText, #contactText{
+  transition: 3s;
+}
+
+#test{
+  padding-top: 0vw;
+  margin-top: 2vw;
+  margin-bottom: 0vw;
+}
+
+#qrImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16vw;
+  width: 20%;
+}
+
 p{
-  letter-spacing: 2vw;
-  font-size: 4vw;
-  padding-top: 6vh;
+  letter-spacing: 1.5vw;
+  font-size: 2vw;
+  padding-top: 2vh;
+  line-height: 5vw;
+  padding-left: 8vw;
+}
+
+@media screen and (max-width: 1065px){
+  p{
+    font-size: 3vw;
+    line-height: 8vw;
+  }
 }
 
 @media screen and (max-width: 603px) {
-  #homeTitle{
+  #aboutTitle, #homeTitle, #contactTitle{
     letter-spacing: 4vh;
     font-size: 6vh;
-    padding-top: 6%;
+    padding-top: 10%;
     padding-left: 8%;
+  }
+  #immoTitle{
+    letter-spacing: 4vh;
+    font-size: 5vh;
+    padding-top: 10%;
+    padding-left: 8%;
+  }
+  p{
+    font-size: 4.5vw;
+    line-height: 10vw;
   } 
 }
 
 @media screen and (max-width: 367px) {
-  #homeTitle{
+  #homeTitle, #immoTitle{
     letter-spacing: 4vh;
     font-size: 6vh;
   } 
